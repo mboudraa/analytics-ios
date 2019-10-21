@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char AnalyticsVersionString[];
 #import "SEGContext.h"
 #import "SEGIntegration.h"
 #import "SEGMiddleware.h"
+#import "SEGUtils.h"
