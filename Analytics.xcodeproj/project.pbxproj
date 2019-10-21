@@ -92,6 +92,7 @@
 		6E265C781FB1178C0030E08E /* IntegrationsManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationsManagerTest.swift; sourceTree = "<group>"; };
 		6EEC1C702017EA370089C478 /* EndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndToEndTests.swift; sourceTree = "<group>"; };
 		89033CBF22319674E6CE7E61 /* Pods_AnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F5621B235E55A0006FD262 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		D3BF8AE673FE0FD91DF5B503 /* Pods-AnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA88A5971DED7608009FB66A /* SEGSerializableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGSerializableValue.h; sourceTree = "<group>"; };
 		EA8F09731E24C5C600B8B93F /* MiddlewareTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareTests.swift; sourceTree = "<group>"; };
@@ -219,6 +220,7 @@
 		EADEB8511DECD080005322DA = {
 			isa = PBXGroup;
 			children = (
+				B9F5621B235E55A0006FD262 /* Package.swift */,
 				EADEB85D1DECD080005322DA /* Analytics */,
 				EADEB86B1DECD0EF005322DA /* AnalyticsTests */,
 				EADEB85C1DECD080005322DA /* Products */,
@@ -473,6 +475,7 @@
 				TargetAttributes = {
 					EADEB85A1DECD080005322DA = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					EADEB8691DECD0EF005322DA = {
@@ -486,6 +489,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EADEB8511DECD080005322DA;
@@ -745,6 +749,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -759,6 +764,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -768,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -782,6 +790,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvos appletvsimulator";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
